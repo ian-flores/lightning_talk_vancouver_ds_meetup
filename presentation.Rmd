@@ -1,6 +1,6 @@
 ---
-title: "Presentation Ninja"
-subtitle: "⚔<br/>with xaringan"
+title: "Machine Learning for Graphs"
+subtitle: "How to get untangled"
 author: "Ian Flores Siaca"
 date: "`r Sys.Date()`"
 output:
