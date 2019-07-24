@@ -1,0 +1,160 @@
+---
+title: "Presentation Ninja"
+subtitle: "⚔<br/>with xaringan"
+author: "Ian Flores Siaca"
+date: "`r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+# Introduction - Graph Data
+
+.pull-left[<img src='https://upload.wikimedia.org/wikipedia/commons/c/c6/Topological_Ordering.svg' height='300'>
+]
+
+--
+
+.pull-right[<img src='https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Social_Network_Diagram_%28large%29.svg/800px-Social_Network_Diagram_%28large%29.svg.png' height='300'>]
+
+---
+
+# Introduction - Applications
+
+- Social Networks
+- Cybersecurity
+- Bioinformatics
+- Software Engineering Research
+
+---
+
+# Graph Data for Machine Learning
+
+- Machine learning on graphs is limited
+--
+
+- Graph embeddings
+
+  - **Node Embeddings**
+--
+
+  - Subcommunity Embeddings
+--
+
+  - **Whole Graph Embeddings**
+
+---
+
+# Skipgram & Negative Sampling
+
+- NLP techniques applied to graphs
+
+--
+
+- *'The scientist is learning about graphs.'*
+
+.pull-left[
+- (The, scientist) --> 1
+- (The, learning) --> 0
+- (scientist, about) --> 0
+- (about, graphs) --> 1
+]
+
+---
+
+# Node Embeddings - DeepWalk
+
+.center[<img src='https://miro.medium.com/max/544/1*2s7MToOLVjcCUnZOOqWxQQ.png' height='200'>]
+
+--
+
+.center[<img src='https://miro.medium.com/max/1000/1*j-P55wBp5PP9oqrxDxdDpw.png'>]
+
+---
+
+# Node  Embeddings - Node2Vec
+
+.center[<img src='https://miro.medium.com/max/700/1*ta1Bzh9mWo38MxEZ5nKnDQ.png' height='350'>]
+
+---
+
+# Node Embeddings - Node2Vec
+
+.center[<img src='https://miro.medium.com/max/606/1*IMMz9yVoudNOhmSAfVlHGw.png' height='350'>]
+
+---
+
+# Whole Graph Embeddings - Graph2Vec
+
+- Unsupervised representation learning
+- Task-agnostic embeddings
+- Captures structural equivalence
+
+.center[<img src='https://miro.medium.com/max/700/1*3up8dT7sjf5UsMR9UfGvxw.png' height='300'>]
+
+---
+
+# Modifications to this approaches
+
+![](imgs/anythinc2vec.png)
+
+---
+class: inverse, middle, center
+
+# Case Study
+
+---
+
+# Case Study - Git Embeddings
+
+
+.pull-left[
+Git is the most widely used modern version control system in the world
+
+Designed with **performance**, **security** and **flexibility** in mind...
+
+but not **ease of use**.
+]
+
+.pull-right[
+![xkcd-git](https://imgs.xkcd.com/comics/git.png)
+]
+
+---
+
+# Case Study - Git Embeddings
+
+- Objective: Understand what workflows Git users follow
+- Data: Commit history of 10,000 GitHub public repositories
+
+.center[<img src='https://raw.githubusercontent.com/UBC-MDS/RStudio-GitHub-Analysis/master/docs/proposal_presentation/imgs/git_repo_2.png' height='300'>]
+
+---
+
+# Case Study - Git Embeddings
+
+.center[<img src='https://github.com/UBC-MDS/RStudio-GitHub-Analysis/raw/master/docs/final_presentation/imgs/global_clustering.png' height = '600'>]
+
+---
+
+# Case Study - Git Embeddings
+
+.center[<img src='https://github.com/UBC-MDS/RStudio-GitHub-Analysis/raw/master/docs/final_presentation/imgs/gt_10_commits.png' height = '600'>]
+
+---
+
+# References
+
+- https://arxiv.org/pdf/1707.05005.pdf
+- https://arxiv.org/abs/1403.6652?source=post_page
+- https://towardsdatascience.com/embedding-graphs-with-deep-learning-55e0c66d7752
+- https://towardsdatascience.com/graph-embeddings-the-summary-cc6075aba007
+
+---
+class: inverse, middle, center
+
+# Questions
